@@ -23,7 +23,7 @@
         "test": "jest"
     },
     "dependencies": {
-        "@script-string/core": "^0.2.0-1"
+        "@script-string/core": "^0.3.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.8.3",
