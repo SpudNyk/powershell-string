@@ -1,0 +1,55 @@
+{
+    "name": "@script-string/powershell",
+    "version": "0.3.0",
+    "description": "Use run template strings as powershell",
+    "keywords": [
+        "script",
+        "template strings",
+        "typescript",
+        "powershell"
+    ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.js",
+    "repository": "https://github.com/SpudNyk/powershell-string.git",
+    "license": "MIT",
+    "scripts": {
+        "build:package": "node scripts/package-cli.js . dist",
+        "build:types": "tsc --emitDeclarationOnly --outDir dist/lib",
+        "build:babel:cjs": "cross-env BABEL_ENV=cjs babel src -d dist/lib --extensions \".ts\"",
+        "build:babel": "yarn build:cjs && yarn build:types && yarn build:package",
+        "build:tsc:cjs": "tsc --declaration true --outDir dist/lib",
+        "build": "yarn build:tsc:cjs && yarn build:package",
+        "docs": "typedoc --out docs/api --readme none --name script-string --gitRevision master",
+        "test": "jest"
+    },
+    "dependencies": {
+        "@script-string/core": "^0.2.0-1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.3",
+        "@babel/core": "^7.8.3",
+        "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+        "@babel/plugin-transform-runtime": "^7.8.3",
+        "@babel/preset-env": "^7.8.3",
+        "@babel/preset-typescript": "^7.8.3",
+        "@types/jest": "^25.1.1",
+        "@types/lolex": "^5.1.0",
+        "@types/node": "^13.7.0",
+        "@types/tmp": "^0.1.0",
+        "cross-env": "^7.0.0",
+        "eslint": "^6.8.0",
+        "fs-jetpack": "^2.2.3",
+        "jest": "^25.1.0",
+        "jsdoc-to-markdown": "^5.0.3",
+        "lolex": "^5.1.2",
+        "typedoc": "^0.16.8",
+        "typescript": "^3.7.5",
+        "yargs": "^15.1.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    }
+}
