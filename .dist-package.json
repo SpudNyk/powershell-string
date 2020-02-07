@@ -1,0 +1,5 @@
+{
+    "package": {
+        "enable": ["fix-exports"]
+    }
+}

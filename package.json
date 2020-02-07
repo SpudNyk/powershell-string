@@ -1,6 +1,6 @@
 {
     "name": "@script-string/powershell",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "Embed and run powershell scripts as template strings",
     "keywords": [
         "script",
@@ -13,16 +13,17 @@
     "repository": "https://github.com/SpudNyk/powershell-string.git",
     "license": "MIT",
     "scripts": {
-        "build:package": "node scripts/package-cli.js . dist",
+        "dist:clean": "dist-package clean",
+        "dist:package": "dist-package package",
         "build:types": "tsc --emitDeclarationOnly --outDir dist/lib",
         "build:babel:cjs": "cross-env BABEL_ENV=cjs babel src -d dist/lib --extensions \".ts\"",
-        "build:babel": "yarn build:babel:cjs && yarn build:types && yarn build:package",
+        "build:babel": "yarn dist:clean && yarn build:babel:cjs && yarn build:types && yarn dist:package",
         "build:tsc:cjs": "tsc --declaration true --outDir dist/lib",
-        "build": "yarn build:tsc:cjs && yarn build:package",
+        "build": "yarn dist:clean && yarn build:tsc:cjs && yarn dist:package",
         "docs": "typedoc --out docs/api --readme none --name script-string --gitRevision master"
     },
     "dependencies": {
-        "@script-string/core": "^0.3.0",
+        "@script-string/core": "^0.3.1",
         "@types/node": "^13.7.0",
         "@types/tmp": "^0.1.0"
     },
@@ -34,6 +35,7 @@
         "@babel/preset-env": "^7.8.3",
         "@babel/preset-typescript": "^7.8.3",
         "cross-env": "^7.0.0",
+        "dist-package": "^0.2.1",
         "eslint": "^6.8.0",
         "fs-jetpack": "^2.2.3",
         "typedoc": "^0.16.8",

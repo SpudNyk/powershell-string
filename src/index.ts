@@ -38,4 +38,5 @@ class PSScript extends script.Builder {
     }
 }
 
-export const powershell = script.define(['powershell', 'pwsh'], PSScript);
+const powershell = script.define(['powershell', 'pwsh'], PSScript);
+export default powershell;
