@@ -1,5 +1,3 @@
 {
-    "package": {
-        "enable": ["fix-exports"]
-    }
+    "package": {}
 }

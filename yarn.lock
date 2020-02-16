@@ -770,15 +770,15 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@script-string/core@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@script-string/core/-/core-0.3.1.tgz#3a1f17224dd82005d9ae00533c5c54f9a03fdb1a"
-  integrity sha512-BcTgLyXAV0VlwhCGcldF1Y4pdImBbzhp3KPO71C64X2TEUaXCyUx0W7TtmVGFtVM/2BxW1LWR1SMUaD3dQfnSg==
+"@script-string/core@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@script-string/core/-/core-0.3.2.tgz#eb5fe7b712d5738c4dd46fe2ba1145a435729acf"
+  integrity sha512-KM8xoFTrgGVNTJOIc7JjPTZDhsCaOQ5RrAN4QSPtPAoPtSJrTi4juSTyNLDLeqe/F9/wlzRanu5fCOQHiT0FTg==
   dependencies:
-    "@types/node" "^13.7.0"
+    "@types/node" "^13.7.1"
     "@types/tmp" "^0.1.0"
-    is-what "^3.5.1"
-    merge-anything "^2.4.4"
+    is-what "^3.6.0"
+    merge-anything "^3.0.1"
     tmp-promise "^2.0.2"
 
 "@types/color-name@^1.1.1":
@@ -791,7 +791,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
-"@types/node@^13.7.0", "@types/node@^13.7.1":
+"@types/node@^13.7.1":
   version "13.7.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.1.tgz#238eb34a66431b71d2aaddeaa7db166f25971a0d"
   integrity sha512-Zq8gcQGmn4txQEJeiXo/KiLpon8TzAl0kmKH4zdWctPj05nWwp1ClMdAVEloqrQKfaC48PNLdgN/aVaLqUrluA==
@@ -2049,7 +2049,7 @@ is-symbol@^1.0.2:
   dependencies:
     has-symbols "^1.0.1"
 
-is-what@^3.3.1, is-what@^3.5.1, is-what@^3.6.0:
+is-what@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/is-what/-/is-what-3.6.0.tgz#458f7895d4b2aec4484e2a274dbb8a618eebea04"
   integrity sha512-2rMAWmuDACWgcy5Cp4eDXHRf4GlNjXKp3e/0etFzE5HZhCgPw8u5zeKDyLIUmtE2GP9mGK3jS7jvXYFc6qk/ZA==
@@ -2245,13 +2245,6 @@ memorystream@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/memorystream/-/memorystream-0.3.1.tgz#86d7090b30ce455d63fbae12dda51a47ddcaf9b2"
   integrity sha1-htcJCzDORV1j+64S3aUaR93K+bI=
-
-merge-anything@^2.4.4:
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/merge-anything/-/merge-anything-2.4.4.tgz#6226b2ac3d3d3fc5fb9e8d23aa400df25f98fdf0"
-  integrity sha512-l5XlriUDJKQT12bH+rVhAHjwIuXWdAIecGwsYjv2LJo+dA1AeRTmeQS+3QBpO6lEthBMDi2IUMpLC1yyRvGlwQ==
-  dependencies:
-    is-what "^3.3.1"
 
 merge-anything@^3.0.1:
   version "3.0.1"

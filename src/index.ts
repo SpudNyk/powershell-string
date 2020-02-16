@@ -1,7 +1,7 @@
 import os from 'os';
-import * as script from '@script-string/core';
+import { Builder, builder, define, include, raw } from '@script-string/core';
 import language from './language';
-
+export { include, raw };
 const runner = {
     useStdIn: true,
     extension: '.ps1',
@@ -13,14 +13,16 @@ const runner = {
     }
 };
 
-const params: [string, string, any][] = [
-    ['args', 'ScriptArguments', []]
-];
+const params: [string, string, any][] = [['args', 'ScriptArguments', []]];
 
-const args = 'ScriptArguments'
+const args = 'ScriptArguments';
 
-class PSScript extends script.Builder {
-    constructor(strings: string[], values: any[], options: script.builder.BuilderOptions) {
+class PSScript extends Builder {
+    constructor(
+        strings: string[],
+        values: any[],
+        options: builder.BuilderOptions
+    ) {
         super(strings, values, {
             name: 'powershell',
             language,
@@ -38,5 +40,6 @@ class PSScript extends script.Builder {
     }
 }
 
-const powershell = script.define(['powershell', 'pwsh'], PSScript);
-export default powershell;
+export const powershell = define(['powershell', 'pwsh'], PSScript);
+// alias
+export { powershell as pwsh };

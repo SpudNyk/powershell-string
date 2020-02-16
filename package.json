@@ -1,6 +1,6 @@
 {
     "name": "@script-string/powershell",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "description": "Embed and run powershell scripts as template strings",
     "keywords": [
         "script",
@@ -21,7 +21,7 @@
         "docs": "typedoc --out docs/api --readme none --name script-string --gitRevision master"
     },
     "dependencies": {
-        "@script-string/core": "^0.3.1",
+        "@script-string/core": "^0.3.2",
         "@types/node": "^13.7.1",
         "@types/tmp": "^0.1.0"
     },
