@@ -1,6 +1,6 @@
 {
     "name": "@script-string/powershell",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "description": "Embed and run powershell scripts as template strings",
     "keywords": [
         "script",
@@ -21,23 +21,23 @@
         "docs": "typedoc --out docs/api --readme none --name script-string --gitRevision master"
     },
     "dependencies": {
-        "@script-string/core": "^0.3.2",
-        "@types/node": "^13.7.1",
+        "@script-string/core": "^0.3.3",
+        "@types/node": "^13.9.1",
         "@types/tmp": "^0.1.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.8.3",
-        "@babel/core": "^7.8.3",
+        "@babel/core": "^7.8.7",
         "@babel/plugin-transform-modules-commonjs": "^7.8.3",
         "@babel/plugin-transform-runtime": "^7.8.3",
-        "@babel/preset-env": "^7.8.3",
+        "@babel/preset-env": "^7.8.7",
         "@babel/preset-typescript": "^7.8.3",
-        "cross-env": "^7.0.0",
-        "dist-package": "^0.2.2",
+        "cross-env": "^7.0.2",
+        "dist-package": "^0.2.3",
         "eslint": "^6.8.0",
         "npm-run-all": "^4.1.5",
-        "typedoc": "^0.16.10",
-        "typescript": "^3.7.5"
+        "typedoc": "^0.17.0",
+        "typescript": "^3.8.3"
     },
     "publishConfig": {
         "access": "public"
